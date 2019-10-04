@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _04_Dierenpark.Properties
+namespace _05_Kinderbijslag.Properties
 {
 
 

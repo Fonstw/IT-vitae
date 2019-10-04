@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _04_Dierenpark
+namespace _05_Kinderbijslag
 {
     static class Program
     {
