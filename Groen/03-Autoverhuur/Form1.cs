@@ -32,15 +32,7 @@ namespace _03_Autoverhuur
                 }
             }
 
-            float tankPrice = 0;
-            if (txbExtraBenzinePrijs.Text != "")
-            {
-                if (!float.TryParse(txbExtraBenzinePrijs.Text, out tankPrice))
-                {
-                    lblAntwoord.Text = "Voer a.u.b. een geldig getal voor de bijgetankte prijs in.";
-                    return;
-                }
-            }
+            float tankPrice = Convert.ToSingle(numExtraBenzinePrijs.Value);
 
             if (rdbPersonenAuto.Checked)
             {

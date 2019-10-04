@@ -36,11 +36,12 @@
             this.txbKilometer = new System.Windows.Forms.TextBox();
             this.dtpStartVerhuur = new System.Windows.Forms.DateTimePicker();
             this.dtpEindVerhuur = new System.Windows.Forms.DateTimePicker();
-            this.txbExtraBenzinePrijs = new System.Windows.Forms.TextBox();
             this.btnBereken = new System.Windows.Forms.Button();
             this.lblAntwoord = new System.Windows.Forms.Label();
             this.rdbPersonenAuto = new System.Windows.Forms.RadioButton();
             this.rdbPersonenBus = new System.Windows.Forms.RadioButton();
+            this.numExtraBenzinePrijs = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numExtraBenzinePrijs)).BeginInit();
             this.SuspendLayout();
             // 
             // lblKilometers
@@ -109,13 +110,6 @@
             this.dtpEindVerhuur.Size = new System.Drawing.Size(200, 22);
             this.dtpEindVerhuur.TabIndex = 7;
             // 
-            // txbExtraBenzinePrijs
-            // 
-            this.txbExtraBenzinePrijs.Location = new System.Drawing.Point(226, 123);
-            this.txbExtraBenzinePrijs.Name = "txbExtraBenzinePrijs";
-            this.txbExtraBenzinePrijs.Size = new System.Drawing.Size(100, 22);
-            this.txbExtraBenzinePrijs.TabIndex = 10;
-            // 
             // btnBereken
             // 
             this.btnBereken.Location = new System.Drawing.Point(226, 151);
@@ -158,16 +152,29 @@
             this.rdbPersonenBus.Text = "Personenbus";
             this.rdbPersonenBus.UseVisualStyleBackColor = true;
             // 
+            // numExtraBenzinePrijs
+            // 
+            this.numExtraBenzinePrijs.DecimalPlaces = 2;
+            this.numExtraBenzinePrijs.Location = new System.Drawing.Point(226, 124);
+            this.numExtraBenzinePrijs.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numExtraBenzinePrijs.Name = "numExtraBenzinePrijs";
+            this.numExtraBenzinePrijs.Size = new System.Drawing.Size(120, 22);
+            this.numExtraBenzinePrijs.TabIndex = 10;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(468, 208);
+            this.Controls.Add(this.numExtraBenzinePrijs);
             this.Controls.Add(this.rdbPersonenBus);
             this.Controls.Add(this.rdbPersonenAuto);
             this.Controls.Add(this.lblAntwoord);
             this.Controls.Add(this.btnBereken);
-            this.Controls.Add(this.txbExtraBenzinePrijs);
             this.Controls.Add(this.dtpEindVerhuur);
             this.Controls.Add(this.dtpStartVerhuur);
             this.Controls.Add(this.txbKilometer);
@@ -178,6 +185,7 @@
             this.Controls.Add(this.lblKilometers);
             this.Name = "frmMain";
             this.Text = "Autoverhuur";
+            ((System.ComponentModel.ISupportInitialize)(this.numExtraBenzinePrijs)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,11 +201,11 @@
         private System.Windows.Forms.TextBox txbKilometer;
         private System.Windows.Forms.DateTimePicker dtpStartVerhuur;
         private System.Windows.Forms.DateTimePicker dtpEindVerhuur;
-        private System.Windows.Forms.TextBox txbExtraBenzinePrijs;
         private System.Windows.Forms.Button btnBereken;
         private System.Windows.Forms.Label lblAntwoord;
         private System.Windows.Forms.RadioButton rdbPersonenAuto;
         private System.Windows.Forms.RadioButton rdbPersonenBus;
+        private System.Windows.Forms.NumericUpDown numExtraBenzinePrijs;
     }
 }
 
