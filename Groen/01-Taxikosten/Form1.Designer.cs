@@ -131,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(449, 185);
             this.Controls.Add(this.lblAntwoord);
             this.Controls.Add(this.btnBereken);
             this.Controls.Add(this.ckbWeekendPrijs);
