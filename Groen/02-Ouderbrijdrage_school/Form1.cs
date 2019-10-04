@@ -21,29 +21,9 @@ namespace _02_Ouderbrijdrage_school
         {
             float price = 50;
 
-            int childrenUnderTen = 0;
-            if (txbOnderTien.Text != "")
-            {
-                if (int.TryParse(txbOnderTien.Text, out childrenUnderTen))
-                    price += childrenUnderTen * 25;
-                else
-                {
-                    lblAntwoord.Text = "Voer a.u.b. een rond getal in.";
-                    return;
-                }
-            }
+            price += Convert.ToSingle(numUnderTen.Value * 25);
 
-            int tenOrOlder = 0;
-            if (txbTienOfOuder.Text != "")
-            {
-                if (int.TryParse(txbTienOfOuder.Text, out tenOrOlder))
-                    price += tenOrOlder * 37;
-                else
-                {
-                    lblAntwoord.Text = "Voer a.u.b. een rond getal in.";
-                    return;
-                }
-            }
+            price += Convert.ToSingle(numTenOrOlder.Value * 37);
 
             if (ckbEenOuderGezin.Checked)
                 price *= .75f;

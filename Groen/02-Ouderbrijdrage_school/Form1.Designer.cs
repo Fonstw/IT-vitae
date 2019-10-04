@@ -31,17 +31,19 @@
             this.lblOnderTien = new System.Windows.Forms.Label();
             this.lblTienOfOuder = new System.Windows.Forms.Label();
             this.lblEenOuderGezin = new System.Windows.Forms.Label();
-            this.txbOnderTien = new System.Windows.Forms.TextBox();
-            this.txbTienOfOuder = new System.Windows.Forms.TextBox();
             this.ckbEenOuderGezin = new System.Windows.Forms.CheckBox();
             this.lblAntwoord = new System.Windows.Forms.Label();
             this.btnBereken = new System.Windows.Forms.Button();
+            this.numUnderTen = new System.Windows.Forms.NumericUpDown();
+            this.numTenOrOlder = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numUnderTen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTenOrOlder)).BeginInit();
             this.SuspendLayout();
             // 
             // lblOnderTien
             // 
             this.lblOnderTien.AutoSize = true;
-            this.lblOnderTien.Location = new System.Drawing.Point(12, 15);
+            this.lblOnderTien.Location = new System.Drawing.Point(12, 14);
             this.lblOnderTien.Name = "lblOnderTien";
             this.lblOnderTien.Size = new System.Drawing.Size(168, 17);
             this.lblOnderTien.TabIndex = 0;
@@ -64,20 +66,6 @@
             this.lblEenOuderGezin.Size = new System.Drawing.Size(112, 17);
             this.lblEenOuderGezin.TabIndex = 2;
             this.lblEenOuderGezin.Text = "Eénoudergezin?";
-            // 
-            // txbOnderTien
-            // 
-            this.txbOnderTien.Location = new System.Drawing.Point(202, 12);
-            this.txbOnderTien.Name = "txbOnderTien";
-            this.txbOnderTien.Size = new System.Drawing.Size(100, 22);
-            this.txbOnderTien.TabIndex = 3;
-            // 
-            // txbTienOfOuder
-            // 
-            this.txbTienOfOuder.Location = new System.Drawing.Point(202, 40);
-            this.txbTienOfOuder.Name = "txbTienOfOuder";
-            this.txbTienOfOuder.Size = new System.Drawing.Size(100, 22);
-            this.txbTienOfOuder.TabIndex = 4;
             // 
             // ckbEenOuderGezin
             // 
@@ -109,21 +97,37 @@
             this.btnBereken.UseVisualStyleBackColor = true;
             this.btnBereken.Click += new System.EventHandler(this.BtnBereken_Click);
             // 
+            // numUnderTen
+            // 
+            this.numUnderTen.Location = new System.Drawing.Point(202, 12);
+            this.numUnderTen.Name = "numUnderTen";
+            this.numUnderTen.Size = new System.Drawing.Size(75, 22);
+            this.numUnderTen.TabIndex = 3;
+            // 
+            // numTenOrOlder
+            // 
+            this.numTenOrOlder.Location = new System.Drawing.Point(202, 40);
+            this.numTenOrOlder.Name = "numTenOrOlder";
+            this.numTenOrOlder.Size = new System.Drawing.Size(75, 22);
+            this.numTenOrOlder.TabIndex = 4;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 155);
+            this.ClientSize = new System.Drawing.Size(290, 155);
+            this.Controls.Add(this.numTenOrOlder);
+            this.Controls.Add(this.numUnderTen);
             this.Controls.Add(this.btnBereken);
             this.Controls.Add(this.lblAntwoord);
             this.Controls.Add(this.ckbEenOuderGezin);
-            this.Controls.Add(this.txbTienOfOuder);
-            this.Controls.Add(this.txbOnderTien);
             this.Controls.Add(this.lblEenOuderGezin);
             this.Controls.Add(this.lblTienOfOuder);
             this.Controls.Add(this.lblOnderTien);
             this.Name = "frmMain";
             this.Text = "Ouderbijdrage school";
+            ((System.ComponentModel.ISupportInitialize)(this.numUnderTen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTenOrOlder)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,11 +138,11 @@
         private System.Windows.Forms.Label lblOnderTien;
         private System.Windows.Forms.Label lblTienOfOuder;
         private System.Windows.Forms.Label lblEenOuderGezin;
-        private System.Windows.Forms.TextBox txbOnderTien;
-        private System.Windows.Forms.TextBox txbTienOfOuder;
         private System.Windows.Forms.CheckBox ckbEenOuderGezin;
         private System.Windows.Forms.Label lblAntwoord;
         private System.Windows.Forms.Button btnBereken;
+        private System.Windows.Forms.NumericUpDown numUnderTen;
+        private System.Windows.Forms.NumericUpDown numTenOrOlder;
     }
 }
 
