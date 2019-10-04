@@ -121,7 +121,7 @@
             // 
             this.lblAntwoord.AutoSize = true;
             this.lblAntwoord.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblAntwoord.Location = new System.Drawing.Point(332, 154);
+            this.lblAntwoord.Location = new System.Drawing.Point(12, 159);
             this.lblAntwoord.Name = "lblAntwoord";
             this.lblAntwoord.Size = new System.Drawing.Size(48, 17);
             this.lblAntwoord.TabIndex = 9;
